@@ -1,0 +1,114 @@
+.portfolio-buttons__list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.portfolio-buttons__button {
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 22px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {background-color: var(--brand-color);
+            color: #FFFFFF;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.portfolio-cards__list {
+
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    max-width: 370px;
+}
+
+.portfolio-cards__shadow {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+}
+
+.portfolio-cards__photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-cards__shadow:hover .portfolio-cards__overlay,
+.portfolio-cards__shadow:focus .portfolio-cards__overlay {
+    transform: translateY(0);
+}
+
+.portfolio-cards__wrapper {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.portfolio-cards__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-cards__overlay-text {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    user-select: none;
+}
+
+.portfolio-cards__paragraph {
+    padding: 20px 24px;
+}
+
+.portfolio-cards__project-title {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.portfolio-cards__project-description {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-color);
+}

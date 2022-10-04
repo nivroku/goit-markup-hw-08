@@ -1,0 +1,102 @@
+.about {
+    
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.about__list {
+    display: flex;
+    gap: 30px;
+    
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    flex-basis: calc((100% - 30px * (1 - 1)) / 1);
+        
+        
+        
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+        flex-direction: row;
+    };
+        
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+        flex-direction: row;
+    };
+       
+}
+
+// .about__card-set {
+
+    
+//     flex-basis: calc((100% - 30px * (1 - 1)) / 1);
+    
+//         @media screen and (min-width: 768px) {
+//             flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+//             flex-direction: row;
+//         }
+    
+//         @media screen and (min-width: 1200px) {
+//             flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+//             flex-direction: row;
+//         }
+// }
+
+.about__icon {
+    display: flex;
+    background-color: #F5F4FA;
+    width: 450px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+    @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    @media screen and (min-width: 1200px), (min-width: 768px) {
+            text-align: left;
+        }
+}
+
+.about__description {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-color);
+    
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+}
